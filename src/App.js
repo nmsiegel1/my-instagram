@@ -1,5 +1,5 @@
 import "./App.css";
-import { Nav, Bio } from "./components";
+import { Nav, Bio, Gallery } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Nav />
       <div className="container">
         <Bio />
+        <Gallery />
       </div>
     </>
   );
