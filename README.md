@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# My Instagram
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Available Scripts
+## About
 
-In the project directory, you can run:
+This is a front end Instagram clone that has a functioning profile picture, bio and gallery made with React, DexieJS and IndexedDb.
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Made-With](#Made-with)
+- [Install](#Install)
+- [Notes](#Notes)
+- [Application](#Application)
+- [Screenshots](#Screenshots)
+- [Liscense](#Liscense)
+- [Credits](#Credits)
+- [Questions](#Questions)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Made-With
 
-### `npm test`
+- React
+- create-react-app
+- IndexedDB
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Packages/Extras
 
-### `npm run build`
+- DexieJS
+- gh-pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+After cloning the repo, run "npm i" or "npm install" in the command line to install dependencies.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- This applicaiton can be viewed thorough the deployed link or cloned from the repo and used locally.
+- To use the application locally, run npm start after cloning the repo and installing necessary dependencies.
 
-### `npm run eject`
+## Notes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The user can update thier profile picture, bio and add and delete pictures to the gallery. The data for the application is stored with IndexedDb therefore if you close the broser and then return to the site later, all of the data will be loaded automatically.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+https://nmsiegel1.github.io/my-instagram/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+![Screen Shot 2022-12-06 at 2 04 58 PM](https://user-images.githubusercontent.com/102773691/206001243-ac624f71-efe3-4e93-94c4-66edc216e89c.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Liscense
 
-### Code Splitting
+This project is liscensed under the MIT liscense.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Credits
 
-### Analyzing the Bundle Size
+Made by Nina Siegel with help from the tutorial by Ebenezer Don
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+https://www.youtube.com/watch?v=Zm5lw5Nav1w
+https://github.com/ebenezerdon/react-instagram
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Questions
 
-### Advanced Configuration
+For questions, email me at siegel.nina.m@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To see more of my work visit https://github.com/nmsiegel1/
