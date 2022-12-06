@@ -1,38 +1,35 @@
- import pexels1 from '../assets/pexels1.jpeg'
- import pexels2 from '../assets/pexels2.jpeg'
- import pexels3 from '../assets/pexels3.jpeg'
- import pexels4 from '../assets/pexels4.jpeg'
- import pexels5 from '../assets/pexels5.jpeg'
-
+import getPhotoUrl from "get-photo-url"
+import { useLiveQuery } from 'dexie-react-hooks'
+import { db } from '../dexie'
+ 
  const Gallery = () => {
+    const allPhotos = useLiveQuery(() => db.gallery.toArray(), [])
+
+    const addPhoto = async () => {
+        db.gallery.add({
+            url: await getPhotoUrl('#addPhotoInput')
+        })
+    }
+
+    const removePhoto = (id) => {
+        db.gallery.delete(id)
+    }
+
     return (
         <>
         <input type='file' name='photo' id='addPhotoInput' />
-        <label htmlFor="addPhotoInput">
+        <label htmlFor="addPhotoInput" onClick={addPhoto}>
             <i className="add-photo-button fas fa-plus-square"></i>
         </label>
 
         <section className='gallery'>
-    <div className="item">
-        <img src={pexels1} className='item-image' alt='' />
-        <button className='delete-button'>Delete</button>
+            {!allPhotos && <p>Loading...</p>}
+            {allPhotos?.map((photo) => (
+                <div className="item" key={photo.id}>
+        <img src={photo.url} className='item-image' alt='' />
+        <button className='delete-button' onClick={() => removePhoto(photo.id)}>Delete</button>
     </div>
-    <div className="item">
-        <img src={pexels2} className='item-image' alt='' />
-        <button className='delete-button'>Delete</button>
-    </div>
-    <div className="item">
-        <img src={pexels3} className='item-image' alt='' />
-        <button className='delete-button'>Delete</button>
-    </div>
-    <div className="item">
-        <img src={pexels4} className='item-image' alt='' />
-        <button className='delete-button'>Delete</button>
-    </div>
-    <div className="item">
-        <img src={pexels5} className='item-image' alt='' />
-        <button className='delete-button'>Delete</button>
-    </div>
+        ))}
         </section>
         </>
     )
